@@ -1,4 +1,4 @@
-// summing.c —— 根据用户输入的整数求和
+// summing.c —— 根据用户输入的整数求和 test
 #include <stdio.h>
 int main(void)
 {
