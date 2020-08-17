@@ -2,14 +2,16 @@
 #include <stdio.h>
 int main (void)
 {
-    float test1;
-    long long int test2;
+    int test1;
+    int test2;
+    test1 = (test2 = 246,231);
 
-    scanf("%f", &test1);
-    printf("Test1 in float is %f , in long long int is %lld \n", test1, test1);
+    int test3 = 6;
+    test3 /= 3;
 
-    scanf("%f", &test2);
-    printf("Test2 in float is %f , in long long int is %lld \n", test2, test2);
+    printf("test1 = %d, test2 = %d\n", test1 ,test2);
+    printf("%d\n", test3);
+
 
     return 0;
 }
