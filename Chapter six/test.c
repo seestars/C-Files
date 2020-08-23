@@ -11,9 +11,9 @@ int main (void)
     printf("test1[1] = %d\n", test1[1]);
     printf("test1[2] = %d\n", test1[2]);
     printf("\n");
-    printf("test2[1] = %c\n", test2[0]);
-    printf("test2[2] = %c\n", test2[1]);
-    printf("test2[3] = %c\n", test2[2]);
+    printf("test2[0] = %c\n", test2[0]);
+    printf("test2[1] = %c\n", test2[1]);
+    printf("test2[2] = %c\n", test2[2]);
     printf("\n");
     printf("test3[0] = %d\n", test3[0]);
     printf("test3[1] = %d\n", test3[1]);
