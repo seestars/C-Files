@@ -6,6 +6,7 @@ int main (void)
 {
     char test1;
     bool inword = false;
+    bool noenter = false;
 
     printf("Enter a char: \n");
     while ((test1 = getchar()) != '#')
@@ -22,12 +23,18 @@ int main (void)
         }
         if (isspace(test1))
         {
-            test1 = ' ';
-            if (!inword)
+            test1 = ' ';            // 学习指针后使用清零，去掉bug
+            if (!inword && noenter)
+            {
                 printf("\b\n");
+                noenter = false;
+            }
+            else if (isspace(test1))
+                continue;
         }
         else 
                 putchar(test1);
+                noenter = true;
     }
     
     return 0;
