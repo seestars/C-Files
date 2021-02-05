@@ -16,7 +16,7 @@ int menu(void)
     {
         if (status != 1)
             scanf("%*s");   // 处理非整数输入
-        printf("Enter an integer from 1 to 5, pkease.\n");
+        printf("Enter an integer from 1 to 5, please.\n");
     }
 
     return code;
