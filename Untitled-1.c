@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(){
+int main(void){
     int num = 1;
 
     while (num >= 1 && num <= 5) {
