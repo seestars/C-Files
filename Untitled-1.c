@@ -1,24 +1,18 @@
 #include <stdio.h>
 
-int main(){
-    int num = 1;
+int main() {
+    int x, y, z;  // x: 大马数量, y: 中马数量, z: 小马数量
 
-    while (num >= 1 && num <= 5) {
-        printf("请输入代表星期几的数字（如周一：1、周二：2）：");
-        scanf("%d", &num);
-        switch (num) {
-            case 1:printf("科技活动\n");
-                    break;
-            case 2:printf("社会活动\n");
-                    break;
-            case 3:printf("艺术活动\n");
-                    break;
-            case 4:printf("文艺活动\n");
-                    break;
-            case 5:printf("劳技活动\n");
-                    break;
+    printf("可能的解决方案：\n");
+    printf("大马 中马 小马\n");
+
+    for (x = 0; x <= 100; x++) {
+        for (y = 0; y <= 100 - x; y++) {
+            z = 100 - x - y;
+            if (3 * x + 2 * y + 0.5 * z == 100) {
+                printf("%4d %4d %4d\n", x, y, z);
+            }
         }
     }
-
     return 0;
 }
