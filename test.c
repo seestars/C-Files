@@ -1,12 +1,21 @@
-#include <stdio.h>
+// test.c
 
-int main ()
+int main(void)
 {
-    int xxx;
+    int c = 0;
+    while (c != 10)
+    {
+        c++;    // 在次添加断点
+    }
 
-    scanf("%d", &xxx);
+for (int i = 0; i < 10; i++)
+{
+    int a = 0;  // 在次添加断点
 
-    printf("233333\n%d\n", xxx);
+    a++;
+}
+// 在次添加断点
+// 循环内的赋值可以影响到外层变量，但是循环内声明的变量在循环结束后会被释放
 
-    return 023;
+return 0;
 }
