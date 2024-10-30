@@ -1,12 +1,8 @@
-#include <stdio.h>
+// test.c
 
-int main ()
+int main(void)
 {
-    int xxx;
+    char name[3];
 
-    scanf("%d", &xxx);
-
-    printf("233333\n%d\n", xxx);
-
-    return 023;
+    
 }
